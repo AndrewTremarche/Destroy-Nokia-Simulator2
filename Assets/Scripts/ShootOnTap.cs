@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class ShootOnTap : MonoBehaviour
 {
-    public int gunDamage = 1;
-    public float fireRate = 0.25f;
-    public float range = 100f;
-
-    public Camera playerCamera;
-
     // Start is called before the first frame update
     void Start()
     {
