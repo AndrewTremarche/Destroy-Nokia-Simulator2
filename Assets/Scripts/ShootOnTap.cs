@@ -4,12 +4,6 @@ using UnityEngine;
 
 public class ShootOnTap : MonoBehaviour
 {
-    public int gunDamage = 1;
-    public float fireRate = 0.25f;
-    public float range = 100f;
-
-    public Camera playerCamera;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -29,8 +23,9 @@ public class ShootOnTap : MonoBehaviour
                 RaycastHit hit;
                 if (Physics.Raycast(ray, out hit)) //out is a keyword that means after this runs there will be a value coming OUT of the hit
                 {
+                    Nokia nokia = hit.transform.GetComponent<Nokia>();
                     //If I hit something with a collider
-                    if (hit.collider != null)
+                    if (nokia != null)
                     {
                         Debug.Log("Hit the Nokia");
                     }
