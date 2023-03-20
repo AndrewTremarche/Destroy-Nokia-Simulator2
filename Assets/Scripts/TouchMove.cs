@@ -20,7 +20,6 @@ public class TouchMove : MonoBehaviour
 
     void Touchmove()
     {
-
         if( Input.GetMouseButton(0))
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -31,15 +30,11 @@ public class TouchMove : MonoBehaviour
 
             }
             else if(mousePos.x < -1)
-            
-
             {
                 //move left
                 transform.Translate(-moveSpeed, 0, 0);
 
                 
-
-
             }
         }
     }
