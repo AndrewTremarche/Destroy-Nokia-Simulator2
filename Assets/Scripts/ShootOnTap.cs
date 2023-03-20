@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShootOnTap : MonoBehaviour
 {
     // Start is called before the first frame update
+    public ParticleSystem nokiaEplosionEffect;
     void Start()
     {
 
@@ -27,6 +28,7 @@ public class ShootOnTap : MonoBehaviour
                     //If I hit something with a collider
                     if (nokia != null)
                     {
+                        nokiaEplosionEffect.Play();
                         Debug.Log("Hit the Nokia");
                     }
                 }
